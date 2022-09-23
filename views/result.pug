@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    div.card-container
+        div.card Player Choice
+            img(src=`/images/${playerChoice}.jfif`)
+
+        p VS
+        div.card PC Choice
+            img(src=`/images/${pcChoice}.jfif`)
+
+
+    h3 Winner: #{winner}
+
+    a(href='/') Play Again
